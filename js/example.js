@@ -14,7 +14,7 @@ const toBeChanged = ["fresh figs","kale","honey"];
 for(let x = 0; x < totalItems; x++){
     //The second for loop is used to iterate through the toBeChanged array and check if it matches.
     for(let y = 0; y < toBeChanged.length; y++){ 
-        if(listItems[x] == toBeChanged[y]){
+        if(listItems[x].textContent == toBeChanged[y]){
             listItems[x].className = 'cool';
         }
     }
@@ -25,7 +25,7 @@ for(let x = 0; x < totalItems; x++){
 
 
 // Part2. Hint: Use the heading and newHeading to show the number of items in the shopping list
-
+heading.innerHTML = newHeading;
 
 
 
